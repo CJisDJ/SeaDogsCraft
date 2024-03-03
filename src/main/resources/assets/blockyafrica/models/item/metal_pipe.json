@@ -1,0 +1,19 @@
+{
+  "parent": "item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "blockyafrica:item/water_pipe_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "blockyafrica:item/water_pipe_3d"
+    },
+    "ground": {
+      "parent": "blockyafrica:item/water_pipe_3d"
+    },
+    "fixed": {
+      "parent": "blockyafrica:item/water_pipe_3d"
+    }
+  }
+
+}

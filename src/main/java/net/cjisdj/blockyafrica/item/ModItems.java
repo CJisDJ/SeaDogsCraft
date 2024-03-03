@@ -1,7 +1,11 @@
 package net.cjisdj.blockyafrica.item;
 
 import net.cjisdj.blockyafrica.BlockyAfrica;
+import net.cjisdj.blockyafrica.item.custom.FuelItem;
+import net.cjisdj.blockyafrica.item.custom.MetalDetectorItem;
+import net.cjisdj.blockyafrica.item.custom.MetalPipeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.TridentItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,6 +17,21 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_SAPPHIRE = ITEMS.register("raw_sapphire",
+        ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            ()-> new MetalDetectorItem(new Item.Properties().durability(-1)));
+
+    public static final RegistryObject<Item> METAL_PIPE = ITEMS.register("metal_pipe",
+            ()-> new MetalPipeItem(new Item.Properties().durability(250).setNoRepair()));
+
+    public static final RegistryObject<Item> CREAM_PIPE = ITEMS.register("cream_pipe",
+            ()-> new Item(new Item.Properties().food(ModFoods.CREAM_PIPE)));
+
+    public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal",
+            ()-> new FuelItem(new Item.Properties(), 200));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
