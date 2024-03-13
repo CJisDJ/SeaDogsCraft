@@ -1,5 +1,0 @@
-// 1.20.1	2024-03-03T17:46:19.409582	Tags for minecraft:block mod id blockyafrica
-c0c21fa865d5df4f21e45991c70c40812f4b124b data/blockyafrica/tags/blocks/metal_detector_valuables.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
-e22083b8905bf2a7d1c036fa0e18561da26e4b9b data/minecraft/tags/blocks/mineable/pickaxe.json
-69593f07020e16b463ce8c28e4c633574b3aed1d data/minecraft/tags/blocks/needs_iron_tool.json
