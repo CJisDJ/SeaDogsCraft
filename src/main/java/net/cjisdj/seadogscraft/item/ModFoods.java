@@ -10,5 +10,9 @@ public class ModFoods {
             .fast()
             .saturationMod(0.5f)
             .effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 50, 2),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.CONFUSION, 100, 2),1f)
             .build();
+
+
+
 }

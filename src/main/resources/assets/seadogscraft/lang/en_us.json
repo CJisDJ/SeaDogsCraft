@@ -10,7 +10,12 @@
  "item.seadogscraft.metal_pipe": "Metal Pipe",
  "item.seadogscraft.cream_pipe": "Cream Pipe",
  "item.seadogscraft.mini_coal": "Mini Coal",
+ "potion.seadogscraft.wine_bottle": "Wine Bottle",
+
+
+
  "tooltip.seadogscraft.metal_detector.tooltip": "Searches for valuable ores underground.",
+
 
 
  "creativetab.africa_tab": "BlockyAfrica"

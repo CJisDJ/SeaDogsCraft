@@ -1,6 +1,7 @@
 package net.cjisdj.seadogscraft.block;
 
 import net.cjisdj.seadogscraft.SeaDogsCraft;
+import net.cjisdj.seadogscraft.block.custom.ModPortalBlock;
 import net.cjisdj.seadogscraft.block.custom.SoundBlock;
 import net.cjisdj.seadogscraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -33,6 +34,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(3f).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+
+    public static final RegistryObject<Block> MOD_PORTAL = registerBlock("mod_portal",
+            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noLootTable()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

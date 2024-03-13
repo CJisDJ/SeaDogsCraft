@@ -23,6 +23,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.SOUND_BLOCK);
 
+        blockWithItem(ModBlocks.MOD_PORTAL);
+
     }
     
     

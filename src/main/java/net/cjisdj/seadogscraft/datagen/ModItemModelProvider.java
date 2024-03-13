@@ -2,6 +2,7 @@ package net.cjisdj.seadogscraft.datagen;
 
 import net.cjisdj.seadogscraft.SeaDogsCraft;
 import net.cjisdj.seadogscraft.item.ModItems;
+import net.cjisdj.seadogscraft.potion.ModPotions;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -21,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_SAPPHIRE);
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.MINI_COAL);
+        simpleItem(ModItems.WINE_BOTTLE);
 
 
 

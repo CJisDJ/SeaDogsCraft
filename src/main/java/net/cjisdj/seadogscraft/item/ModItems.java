@@ -1,6 +1,7 @@
 package net.cjisdj.seadogscraft.item;
 
 import net.cjisdj.seadogscraft.SeaDogsCraft;
+import net.cjisdj.seadogscraft.item.custom.DrinkBottleItem;
 import net.cjisdj.seadogscraft.item.custom.FuelItem;
 import net.cjisdj.seadogscraft.item.custom.MetalDetectorItem;
 import net.cjisdj.seadogscraft.item.custom.MetalPipeItem;
@@ -30,6 +31,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal",
             ()-> new FuelItem(new Item.Properties(), 200));
+
+    public static final RegistryObject<Item> WINE_BOTTLE = ITEMS.register("wine_bottle",
+            ()-> new DrinkBottleItem(new Item.Properties().food(ModFoods.CREAM_PIPE)));
+
+
 
 
     public static void register(IEventBus eventBus){

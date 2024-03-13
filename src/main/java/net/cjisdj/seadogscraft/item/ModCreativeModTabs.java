@@ -2,10 +2,12 @@ package net.cjisdj.seadogscraft.item;
 
 import net.cjisdj.seadogscraft.SeaDogsCraft;
 import net.cjisdj.seadogscraft.block.ModBlocks;
+import net.cjisdj.seadogscraft.potion.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -25,6 +27,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModItems.METAL_PIPE.get());
                         pOutput.accept(ModItems.CREAM_PIPE.get());
+                        pOutput.accept(ModItems.WINE_BOTTLE.get());
                         pOutput.accept(ModItems.MINI_COAL.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());

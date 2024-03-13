@@ -6,9 +6,14 @@ import net.cjisdj.seadogscraft.entity.ModEntities;
 import net.cjisdj.seadogscraft.entity.client.RhinoRenderer;
 import net.cjisdj.seadogscraft.item.ModCreativeModTabs;
 import net.cjisdj.seadogscraft.item.ModItems;
+import net.cjisdj.seadogscraft.potion.BetterBrewingRecipe;
+import net.cjisdj.seadogscraft.potion.ModPotions;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,6 +43,8 @@ public class SeaDogsCraft
 
         ModEntities.register(modEventBus);
 
+        ModPotions.register(modEventBus);
+
 
 
 
@@ -53,6 +60,8 @@ public class SeaDogsCraft
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.SWEET_BERRIES, ModPotions.WINE_BOTTLE1.get()));
+
     }
 
     // Add the example block item to the building blocks tab
