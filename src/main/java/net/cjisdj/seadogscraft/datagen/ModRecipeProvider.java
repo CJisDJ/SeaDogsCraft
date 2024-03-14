@@ -17,27 +17,27 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider {
 
-    private static final  List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_SAPPHIRE.get(),
-            ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+    //private static final  List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_PERIDOT.get(),
+    //        ModBlocks.PERIDOT_ORE.get(), ModBlocks.DEEPSLATE_PERIDOT_ORE.get());
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 100, "sapphire");
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
+        // oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.PERIDOT.get(), 0.25f, 200, "sapphire");
+        // oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.PERIDOT.get(), 0.25f, 100, "sapphire");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PERIDOT_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
-                .define('S', ModItems.SAPPHIRE.get())
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .define('S', ModItems.PERIDOT.get())
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(),9)
-                .requires(ModBlocks.SAPPHIRE_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PERIDOT.get(),9)
+                .requires(ModBlocks.PERIDOT_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PERIDOT_BLOCK.get()), has(ModBlocks.PERIDOT_BLOCK.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.COAL)
@@ -48,16 +48,10 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.MINI_COAL.get()), has(ModItems.MINI_COAL.get()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MINI_COAL.get(),9)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MINI_COAL.get(),8)
                 .requires(Items.COAL)
                 .unlockedBy(getHasName(Items.COAL), has(Items.COAL))
                 .save(pWriter);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CREAM_PIPE.get(),4)
-                .requires(Items.CAKE)
-                .unlockedBy(getHasName(Items.CAKE), has(Items.CAKE))
-                .save(pWriter);
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SOUND_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SOS")
@@ -67,13 +61,42 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.MINI_COAL.get()), has(ModItems.MINI_COAL.get()))
                 .save(pWriter);
 
-//ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.METAL_PIPE.get())
-      //          .pattern(" S ")
-       //         .pattern(" S ")
-      //          .pattern(" S ")
-       //         .define('S', Items.IRON_INGOT)
-        //        .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
-       //         .save(pWriter);
+//        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.METAL_PIPE.get())
+//                .pattern(" S ")
+//                .pattern(" S ")
+//                .pattern(" S ")
+//                .define('S', Items.IRON_INGOT)
+//                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+//                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PERIDOT_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.PERIDOT.get())
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PERIDOT_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.PERIDOT.get())
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PERIDOT_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.PERIDOT.get())
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PERIDOT_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.PERIDOT.get())
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
+                .save(pWriter);
+
+
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
@@ -90,7 +113,7 @@ public class ModRecipeProvider extends RecipeProvider {
         while(var9.hasNext()) {
             ItemLike itemlike = (ItemLike)var9.next();
             SimpleCookingRecipeBuilder.generic(Ingredient.of(new ItemLike[]{itemlike}), pCategory, pResult,
-                    pExperience, pCookingTime, pCookingSerializer)
+                            pExperience, pCookingTime, pCookingSerializer)
                     .group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(pFinishedRecipeConsumer, SeaDogsCraft.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }

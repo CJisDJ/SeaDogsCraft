@@ -27,9 +27,9 @@ public class ModPlacedFeatures {
                 ModOrePlacement.rareOrePlacement(25,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-32))));
 
-       // register(context, PERIDOT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PERIDOT_ORE_KEY),
-       //         ModOrePlacement.rareOrePlacement(15,
-       //                 HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(-10))));
+        // register(context, PERIDOT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PERIDOT_ORE_KEY),
+        //         ModOrePlacement.rareOrePlacement(15,
+        //                 HeightRangePlacement.uniform(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(-10))));
 
 
         //register(context, NETHER_SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SAPPHIRE_ORE_KEY),
@@ -50,3 +50,4 @@ public class ModPlacedFeatures {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
     }
 }
+

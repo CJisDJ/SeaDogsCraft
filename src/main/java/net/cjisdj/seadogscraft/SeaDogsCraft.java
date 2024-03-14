@@ -6,6 +6,7 @@ import net.cjisdj.seadogscraft.entity.ModEntities;
 import net.cjisdj.seadogscraft.entity.client.RhinoRenderer;
 import net.cjisdj.seadogscraft.item.ModCreativeModTabs;
 import net.cjisdj.seadogscraft.item.ModItems;
+import net.cjisdj.seadogscraft.loot.ModLootModifiers;
 import net.cjisdj.seadogscraft.potion.BetterBrewingRecipe;
 import net.cjisdj.seadogscraft.potion.ModPotions;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -42,6 +43,8 @@ public class SeaDogsCraft
         ModBlocks.register(modEventBus);
 
         ModEntities.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         ModPotions.register(modEventBus);
 

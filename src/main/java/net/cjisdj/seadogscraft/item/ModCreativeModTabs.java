@@ -17,21 +17,38 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SeaDogsCraft.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> AFRICA_TAB = CREATIVE_MODE_TABS.register("africa_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PERIDOT.get()))
                     .title(Component.translatable("creativetab.africa_tab"))
                     .displayItems((pParameters, pOutput) ->{
-                        pOutput.accept(ModItems.SAPPHIRE.get());
-                        pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                        pOutput.accept(ModItems.PERIDOT.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
-                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
-                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
-                        pOutput.accept(ModItems.METAL_PIPE.get());
-                        pOutput.accept(ModItems.CREAM_PIPE.get());
+                        pOutput.accept(ModBlocks.PERIDOT_BLOCK.get());
                         pOutput.accept(ModItems.WINE_BOTTLE.get());
                         pOutput.accept(ModItems.MINI_COAL.get());
-                        pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
-                        pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.PERIDOT_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_PERIDOT_ORE.get());
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+                        pOutput.accept(ModBlocks.MOD_PORTAL.get());
+
+                        pOutput.accept(ModItems.PERIDOT_SWORD.get());
+                        pOutput.accept(ModItems.PERIDOT_PICKAXE.get());
+                        pOutput.accept(ModItems.PERIDOT_AXE.get());
+                        pOutput.accept(ModItems.PERIDOT_SHOVEL.get());
+                        pOutput.accept(ModItems.PERIDOT_HOE.get());
+
+                        pOutput.accept(ModItems.PERIDOT_HELMET.get());
+                        pOutput.accept(ModItems.PERIDOT_CHESTPLATE.get());
+                        pOutput.accept(ModItems.PERIDOT_LEGGINGS.get());
+                        pOutput.accept(ModItems.PERIDOT_BOOTS.get());
+
+
+                        pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
+
+                        pOutput.accept(ModItems.GRAPE_SEEDS.get());
+                        pOutput.accept(ModItems.GRAPE.get());
+
+                        pOutput.accept(ModItems.CORN.get());
+                        pOutput.accept(ModItems.CORN_SEEDS.get());
 
 
                     })

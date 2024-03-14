@@ -1,22 +1,60 @@
 {
- "item.seadogscraft.sapphire": "Sapphire",
- "item.seadogscraft.raw_sapphire": "Raw Sapphire",
- "block.seadogscraft.sapphire_block": "Block of Sapphire",
- "block.seadogscraft.raw_sapphire_block": "Block of Raw Sapphire",
- "block.seadogscraft.sapphire_ore": "Sapphire Ore",
- "block.seadogscraft.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+ "item.seadogscraft.peridot": "Peridot",
+ "block.seadogscraft.peridot_block": "Block of Peridot",
+ "block.seadogscraft.peridot_ore": "Peridot Ore",
+ "block.seadogscraft.deepslate_peridot_ore": "Deepslate Peridot Ore",
+ "block.seadogscraft.baobab_log": "Baobab Log",
+ "block.seadogscraft.baobab_planks": "Baobab Planks",
+ "block.seadogscraft.baobab_leaves": "Baobab Leaves",
  "block.seadogscraft.sound_block": "Sound Block",
  "item.seadogscraft.metal_detector": "Metal Detector",
  "item.seadogscraft.metal_pipe": "Metal Pipe",
  "item.seadogscraft.cream_pipe": "Cream Pipe",
  "item.seadogscraft.mini_coal": "Mini Coal",
- "potion.seadogscraft.wine_bottle": "Wine Bottle",
+
+ "item.seadogscraft.grape_seeds": "Grape Seeds",
+ "item.seadogscraft.grape": "Grape",
+
+ "item.seadogscraft.rice_seeds": "Rice Seeds",
+ "item.seadogscraft.rice": "Rice",
 
 
+ "item.seadogscraft.corn_seeds": "Corn Seeds",
+ "item.seadogscraft.corn": "Corn",
+ "item.seadogscraft.wine_bottle": "Wine Bottle",
+
+ "item.seadogscraft.rhino_spawn_egg": "Rhino Spawn Egg",
 
  "tooltip.seadogscraft.metal_detector.tooltip": "Searches for valuable ores underground.",
+ "block.seadogscraft.baobab_stairs": "Baobab Stairs",
+ "block.seadogscraft.baobab_slab": "Baobab Slab",
+ "block.seadogscraft.baobab_button": "Baobab Button",
+ "block.seadogscraft.baobab_trapdoor": "Baobab Trapdoor",
+ "block.seadogscraft.baobab_door": "Baobab Door",
+ "block.seadogscraft.baobab_pressure_plate": "Baobab Pressure Plate",
+ "block.seadogscraft.baobab_fence": "Baobab Fence",
+ "block.seadogscraft.baobab_fence_gate": "Baobab Fence Gate",
+ "block.seadogscraft.baobab_log": "Baobab Log",
+ "block.seadogscraft.baobab_leaves": "Baobab Leaves",
+ "block.seadogscraft.baobab_wood": "Baobab Wood",
+ "block.seadogscraft.stripped_baobab_log": "Stripped Baobab Log",
+ "block.seadogscraft.stripped_baobab_wood": "Stripped Baobab Wood",
 
 
 
- "creativetab.africa_tab": "BlockyAfrica"
+
+ "item.seadogscraft.peridot_sword": "Peridot Sword",
+ "item.seadogscraft.peridot_pickaxe": "Peridot Pickaxe",
+ "item.seadogscraft.peridot_axe": "Peridot Axe",
+ "item.seadogscraft.peridot_shovel": "Peridot Shovel",
+ "item.seadogscraft.peridot_hoe": "Peridot Hoe",
+
+ "item.seadogscraft.peridot_helmet": "Peridot Helmet",
+ "item.seadogscraft.peridot_chestplate": "Peridot Chestplate",
+ "item.seadogscraft.peridot_leggings": "Peridot Leggings",
+ "item.seadogscraft.peridot_boots": "Peridot Boots",
+
+
+
+ "creativetab.africa_tab": "SeaDog's Craft"
 }

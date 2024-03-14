@@ -31,11 +31,11 @@ public class ModConfiguredFeatures {
       //  RuleTest netherrackReplacables = new BlockMatchTest(Blocks.NETHERRACK);
       //  RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
-      //  List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(OreConfiguration.target(stoneReplaceable,
-      //                  ModBlocks.SAPPHIRE_ORE.get().defaultBlockState()),
-      //          OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.PERIDOT_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_PERIDOT_ORE.get().defaultBlockState()));
 
-       // register(context, OVERWORLD_PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 5));
+        register(context, OVERWORLD_PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 5));
         //register(context, NETHER_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplacables,
                 //ModBlocks.NETHER_SAPPHIRE_ORE.get().defaultBlockState(), 9));
        // register(context, END_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,

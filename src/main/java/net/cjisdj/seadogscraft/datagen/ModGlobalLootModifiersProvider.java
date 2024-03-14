@@ -19,16 +19,19 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
-        add("cream_pipe_from_cake", new AddItemModifier(new LootItemCondition[]{
-                LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.CAKE).build(),
-                LootItemRandomChanceCondition.randomChance(0.70f).build()}, ModItems.CREAM_PIPE.get()));
+        add("corn_seeds_from_grass", new AddItemModifier(new LootItemCondition[]{
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS).build(),
+                LootItemRandomChanceCondition.randomChance(0.10f).build()}, ModItems.CORN_SEEDS.get()));
+        add("grape_seeds_from_grass", new AddItemModifier(new LootItemCondition[]{
+                LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS).build(),
+                LootItemRandomChanceCondition.randomChance(0.10f).build()}, ModItems.GRAPE_SEEDS.get()));
 
-       add("metal_pipe_from_iron_golem", new AddItemModifier(new LootItemCondition[]{
-               new LootTableIdCondition.Builder(new ResourceLocation("entities/iron_golem")).build(),
-                LootItemRandomChanceCondition.randomChance(1f).build()}, ModItems.METAL_PIPE.get()));
+      // add("metal_pipe_from_iron_golem", new AddItemModifier(new LootItemCondition[]{
+       //        new LootTableIdCondition.Builder(new ResourceLocation("entities/iron_golem")).build(),
+        //        LootItemRandomChanceCondition.randomChance(1f).build()}, ModItems.METAL_PIPE.get()));
 
-        add("metal_pipe_from_temple", new AddItemModifier(new LootItemCondition[]{
-                new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build()}, ModItems.METAL_PIPE.get()));
+     //   add("metal_pipe_from_temple", new AddItemModifier(new LootItemCondition[]{
+      //          new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build()}, ModItems.METAL_PIPE.get()));
 
     }
 }

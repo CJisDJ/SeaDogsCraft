@@ -1,6 +1,8 @@
-// 1.20.1	2024-03-13T16:09:19.2115865	Loot Tables
-5cba6160b5cea9a1badf11ae3235e6b6ce94d7d2 data/seadogscraft/loot_tables/blocks/deepslate_sapphire_ore.json
-efd2b289aa25326f4a897a8c972fe88822ef90c6 data/seadogscraft/loot_tables/blocks/raw_sapphire_block.json
-ae3efb5f64e3ba8bdddfa236f056cb13aaf628de data/seadogscraft/loot_tables/blocks/sapphire_block.json
-cee3f5c1f3c83451beb97170cc97733bd7cccdc8 data/seadogscraft/loot_tables/blocks/sapphire_ore.json
+// 1.20.1	2024-03-14T09:01:37.7613664	Loot Tables
+a09e9dbb88789e1ba6c786b06440763150273840 data/seadogscraft/loot_tables/blocks/corn_crop.json
+f9912445118b93093841c368916bc2326cfdc43f data/seadogscraft/loot_tables/blocks/deepslate_peridot_ore.json
+6b8d5721fb429e72a7a5c531e6dc12aab21e151c data/seadogscraft/loot_tables/blocks/grape_crop.json
+332e3276fa3fa72488f76ba2ba560e258ef2b016 data/seadogscraft/loot_tables/blocks/peridot_block.json
+0450ca7b05973ceb47ec8e48b5aba611089eefde data/seadogscraft/loot_tables/blocks/peridot_ore.json
+6f89e6f0880af65b996ce5fd2434d2291c48551d data/seadogscraft/loot_tables/blocks/rice_crop.json
 e3246c562d4da94a75baece61a47e1dc58c828cc data/seadogscraft/loot_tables/blocks/sound_block.json

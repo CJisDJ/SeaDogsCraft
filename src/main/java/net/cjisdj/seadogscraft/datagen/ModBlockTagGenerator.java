@@ -21,15 +21,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
-                .add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES);
+                .add(ModBlocks.PERIDOT_ORE.get()).addTag(Tags.Blocks.ORES);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.SAPPHIRE_BLOCK.get(),
-                        ModBlocks.RAW_SAPPHIRE_BLOCK.get()
+                .add(ModBlocks.PERIDOT_ORE.get(),
+                        ModBlocks.DEEPSLATE_PERIDOT_ORE.get()
                 );
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.SAPPHIRE_ORE.get(),
-                        ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get()
+                .add(ModBlocks.PERIDOT_ORE.get(),
+                        ModBlocks.DEEPSLATE_PERIDOT_ORE.get()
                 );
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
