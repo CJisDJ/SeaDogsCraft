@@ -1,0 +1,6 @@
+// 1.20.1	2024-03-13T23:05:31.7126554	Registries
+d60cbf594857c4a47338e9c275118333b43d6c93 data/seadogscraft/dimension/africa.json
+4e6728674ae7d9fb2e29f699e9a54371070ad2cd data/seadogscraft/dimension_type/africa_type.json
+db6f090330667afeda4c22a0553ee508a696923d data/seadogscraft/forge/biome_modifier/add_peridot_ore.json
+0bf7bdc12c7255f0c4cf5fb4c7b032f2b25e02ae data/seadogscraft/worldgen/configured_feature/peridot_ore.json
+5ac4cd749ff36a8eaeda07e5840ca3530f28185a data/seadogscraft/worldgen/placed_feature/peridot_ore_placed.json

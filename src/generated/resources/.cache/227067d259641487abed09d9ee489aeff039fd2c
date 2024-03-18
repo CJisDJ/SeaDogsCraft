@@ -1,0 +1,4 @@
+// 1.20.1	2024-03-14T09:01:37.762376	Global Loot Modifiers : seadogscraft
+46f2fef90bbd1f3024331d7486d3643b6f87fc07 data/forge/loot_modifiers/global_loot_modifiers.json
+d9fa618d2f0039afc782ab7af85f5088e64c098d data/seadogscraft/loot_modifiers/corn_seeds_from_grass.json
+4b61b1ce5f97d6fc9f750af2868f164184e6805c data/seadogscraft/loot_modifiers/grape_seeds_from_grass.json

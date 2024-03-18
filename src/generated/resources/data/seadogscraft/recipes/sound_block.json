@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:iron_bars"
+    },
+    "S": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SOS",
+    "SSS"
+  ],
+  "result": {
+    "item": "seadogscraft:sound_block"
+  },
+  "show_notification": true
+}
