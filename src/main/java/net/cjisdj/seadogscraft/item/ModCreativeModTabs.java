@@ -75,6 +75,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RICE.get());
                         pOutput.accept(ModItems.RICE_SEEDS.get());
 
+                        pOutput.accept(ModItems.PIRATES_HAT.get());
 
                     })
                     .build());

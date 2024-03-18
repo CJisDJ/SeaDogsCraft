@@ -114,6 +114,9 @@ public class ModItems {
     public static final RegistryObject<Item> PERIDOT_BOOTS = ITEMS.register("peridot_boots",
             ()-> new ArmorItem(ModArmorMaterials.PERIDOT, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> PIRATES_HAT = ITEMS.register("pirates_hat",
+            ()-> new PiratesHatItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties()));
+
     public static final RegistryObject<Item> GRAPE_SEEDS = ITEMS.register("grape_seeds",
             ()-> new ItemNameBlockItem(ModBlocks.GRAPE_CROP.get(), new  Item.Properties()));
 

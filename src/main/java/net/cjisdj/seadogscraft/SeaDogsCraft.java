@@ -5,6 +5,8 @@ import net.cjisdj.seadogscraft.block.ModBlocks;
 import net.cjisdj.seadogscraft.effect.ModEffects;
 import net.cjisdj.seadogscraft.entity.ModEntities;
 import net.cjisdj.seadogscraft.entity.client.*;
+import net.cjisdj.seadogscraft.entity.init.SeaDogsCraftModEntities;
+import net.cjisdj.seadogscraft.entity.init.SeaDogsCraftModItems;
 import net.cjisdj.seadogscraft.item.ModCreativeModTabs;
 import net.cjisdj.seadogscraft.item.ModItems;
 import net.cjisdj.seadogscraft.loot.ModLootModifiers;
@@ -12,6 +14,8 @@ import net.cjisdj.seadogscraft.particle.ModParticles;
 import net.cjisdj.seadogscraft.potion.BetterBrewingRecipe;
 import net.cjisdj.seadogscraft.potion.ModPotions;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.api.distmarker.Dist;
@@ -25,7 +29,15 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.simple.SimpleChannel;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
+
+import java.util.function.BiConsumer;
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(SeaDogsCraft.MOD_ID)
@@ -54,7 +66,11 @@ public class SeaDogsCraft
 
         ModParticles.register(modEventBus);
 
+        SeaDogsCraftModEntities.REGISTRY.register(modEventBus);
+        SeaDogsCraftModItems.REGISTRY.register(modEventBus);
 
+
+        GeckoLib.initialize();
 
 
         // Register the commonSetup method for modloading
@@ -71,6 +87,15 @@ public class SeaDogsCraft
     private void commonSetup(final FMLCommonSetupEvent event) {
         BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, Items.SWEET_BERRIES, ModPotions.WINE_BOTTLE1.get()));
 
+    }
+
+    private static final String PROTOCOL_VERSION = "1";
+    public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MOD_ID, MOD_ID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
+    private static int messageID = 0;
+
+    public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {
+        PACKET_HANDLER.registerMessage(messageID, messageType, encoder, decoder, messageConsumer);
+        messageID++;
     }
 
     // Add the example block item to the building blocks tab
