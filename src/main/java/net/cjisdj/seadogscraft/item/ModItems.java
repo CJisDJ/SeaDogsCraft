@@ -20,7 +20,7 @@ public class ModItems {
     public static final RegistryObject<Item> PERIDOT = ITEMS.register("peridot",
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
-            ()-> new MetalDetectorItem(new Item.Properties().durability(-1)));
+            ()-> new MetalDetectorItem(new Item.Properties().durability(-1).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> GRAPE = ITEMS.register("grape",
             ()-> new Item(new Item.Properties().food(ModFoods.GRAPE)));
