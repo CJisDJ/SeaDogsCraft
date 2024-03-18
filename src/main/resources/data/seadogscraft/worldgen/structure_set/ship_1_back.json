@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "seadogscraft:ship_1_back",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1688914274,
+
+    "spacing": 25,
+
+    "separation": 10,
+
+    "type": "minecraft:random_spread"
+  }
+}

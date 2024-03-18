@@ -25,6 +25,19 @@ public class ModFoods {
             .saturationMod(0.3f)
             .build();
 
+    public static final FoodProperties COOKED_RICE = new FoodProperties.Builder()
+            .nutrition(4)
+            .fast()
+            .saturationMod(0.7f)
+            .build();
+
+
+
+    public static final FoodProperties SUSHI = new FoodProperties.Builder()
+            .nutrition(10)
+            .saturationMod(1.2f)
+            .build();
+
 
 
 

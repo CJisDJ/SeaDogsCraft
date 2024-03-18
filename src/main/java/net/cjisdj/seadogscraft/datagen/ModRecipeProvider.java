@@ -3,12 +3,14 @@ package net.cjisdj.seadogscraft.datagen;
 import net.cjisdj.seadogscraft.SeaDogsCraft;
 import net.cjisdj.seadogscraft.block.ModBlocks;
 import net.cjisdj.seadogscraft.item.ModItems;
+import net.cjisdj.seadogscraft.util.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.SmokingRecipe;
 import net.minecraft.world.level.ItemLike;
 
 import java.util.Iterator;
@@ -17,8 +19,9 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider {
 
-    //private static final  List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_PERIDOT.get(),
-    //        ModBlocks.PERIDOT_ORE.get(), ModBlocks.DEEPSLATE_PERIDOT_ORE.get());
+    private static final  List<ItemLike> RICE_SMELTABLES = List.of(ModItems.RAW_RICE.get());
+//    private static final  List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.MINI_COAL.get(),
+//            ModBlocks.PERIDOT_ORE.get(), ModBlocks.DEEPSLATE_PERIDOT_ORE.get());
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -26,7 +29,33 @@ public class ModRecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         // oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.PERIDOT.get(), 0.25f, 200, "sapphire");
-        // oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.PERIDOT.get(), 0.25f, 100, "sapphire");
+       //  oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.PERIDOT.get(), 0.25f, 100, "sapphire");
+        oreSmoking(pWriter, RICE_SMELTABLES, RecipeCategory.FOOD, ModItems.COOKED_RICE.get(), 0.25f, 100, "rice");
+        oreSmelting(pWriter, RICE_SMELTABLES, RecipeCategory.FOOD, ModItems.COOKED_RICE.get(), 0.25f, 200, "rice");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HAND_CANNON.get())
+                .pattern("GS")
+                .pattern("OS")
+                .define('G', ModItems.EMPTY_HAND_CANNON.get())
+                .define('S', Items.GUNPOWDER)
+                .define('O', Items.IRON_BLOCK)
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_RICE.get(),2)
+                .requires(ModItems.RICE.get())
+                .unlockedBy(getHasName(ModItems.RICE.get()), has(ModItems.RICE.get()))
+                .save(pWriter);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SUSHI.get(),2)
+                .requires(ModItems.COOKED_RICE.get())
+                .requires(ModTags.Items.FISH)
+                .requires(Items.DRIED_KELP)
+                .unlockedBy(getHasName(ModItems.RICE.get()), has(ModItems.RICE.get()))
+                .save(pWriter);
+
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PERIDOT_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
@@ -99,8 +128,12 @@ public class ModRecipeProvider extends RecipeProvider {
 
     }
 
-    protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
-        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
+
+    protected static void oreSmoking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMOKING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smoking");
+    }
+    protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_smelting");
     }
 
     protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {

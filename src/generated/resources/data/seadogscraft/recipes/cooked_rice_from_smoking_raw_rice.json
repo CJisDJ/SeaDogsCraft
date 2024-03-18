@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "rice",
+  "ingredient": {
+    "item": "seadogscraft:raw_rice"
+  },
+  "result": "seadogscraft:cooked_rice"
+}

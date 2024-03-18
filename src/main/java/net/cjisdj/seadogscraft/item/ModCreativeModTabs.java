@@ -24,12 +24,33 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModBlocks.PERIDOT_BLOCK.get());
                         pOutput.accept(ModItems.WINE_BOTTLE.get());
+                        pOutput.accept(ModItems.EMPTY_WINE_BOTTLE.get());
+
+                        pOutput.accept(ModItems.EMPTY_MUG.get());
+                        pOutput.accept(ModItems.BEER_MUG.get());
+                        pOutput.accept(ModItems.RUM_MUG.get());
+                        pOutput.accept(ModItems.GROG_MUG.get());
+
+
+
+
                         pOutput.accept(ModItems.MINI_COAL.get());
                         pOutput.accept(ModBlocks.PERIDOT_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_PERIDOT_ORE.get());
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
                         pOutput.accept(ModBlocks.MOD_PORTAL.get());
+                        pOutput.accept(ModItems.EMPTY_HAND_CANNON.get());
+                        pOutput.accept(ModItems.HAND_CANNON.get());
+                        pOutput.accept(ModItems.EMPTY_FLINTLOCK.get());
+                        pOutput.accept(ModItems.FLINTLOCK.get());
+                        pOutput.accept(ModItems.EMPTY_SNIPER_RIFLE.get());
+                        pOutput.accept(ModItems.SNIPER_RIFLE.get());
+                        pOutput.accept(ModItems.EMPTY_BLUNDERBUSS.get());
+                        pOutput.accept(ModItems.BLUNDERBUSS.get());
+                        pOutput.accept(ModItems.PROJECTILE_TESTER.get());
 
+                        pOutput.accept(ModItems.NAVAL_CUTLASS.get());
+                        pOutput.accept(ModItems.PIRATE_CUTLASS.get());
                         pOutput.accept(ModItems.PERIDOT_SWORD.get());
                         pOutput.accept(ModItems.PERIDOT_PICKAXE.get());
                         pOutput.accept(ModItems.PERIDOT_AXE.get());
@@ -49,6 +70,10 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.CORN.get());
                         pOutput.accept(ModItems.CORN_SEEDS.get());
+
+
+                        pOutput.accept(ModItems.RICE.get());
+                        pOutput.accept(ModItems.RICE_SEEDS.get());
 
 
                     })

@@ -2,11 +2,13 @@ package net.cjisdj.seadogscraft;
 
 import com.mojang.logging.LogUtils;
 import net.cjisdj.seadogscraft.block.ModBlocks;
+import net.cjisdj.seadogscraft.effect.ModEffects;
 import net.cjisdj.seadogscraft.entity.ModEntities;
-import net.cjisdj.seadogscraft.entity.client.RhinoRenderer;
+import net.cjisdj.seadogscraft.entity.client.*;
 import net.cjisdj.seadogscraft.item.ModCreativeModTabs;
 import net.cjisdj.seadogscraft.item.ModItems;
 import net.cjisdj.seadogscraft.loot.ModLootModifiers;
+import net.cjisdj.seadogscraft.particle.ModParticles;
 import net.cjisdj.seadogscraft.potion.BetterBrewingRecipe;
 import net.cjisdj.seadogscraft.potion.ModPotions;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -48,6 +50,10 @@ public class SeaDogsCraft
 
         ModPotions.register(modEventBus);
 
+        ModEffects.register(modEventBus);
+
+        ModParticles.register(modEventBus);
+
 
 
 
@@ -84,6 +90,11 @@ public class SeaDogsCraft
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
+            EntityRenderers.register(ModEntities.MAGIC_PROJECTILE.get(), MagicProjectileRenderer::new);
+            EntityRenderers.register(ModEntities.CANNON_PROJECTILE.get(), CannonProjectileRenderer::new);
+            EntityRenderers.register(ModEntities.SNIPER_PROJECTILE.get(), SniperProjectileRenderer::new);
+            EntityRenderers.register(ModEntities.COMMON_PROJECTILE.get(), CommonProjectileRenderer::new);
+            EntityRenderers.register(ModEntities.FLINTLOCK_PROJECTILE.get(), FlintlockProjectileRenderer::new);
         }
     }
 }

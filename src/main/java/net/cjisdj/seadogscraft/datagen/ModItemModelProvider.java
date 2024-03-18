@@ -51,9 +51,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CORN);
         simpleItem(ModItems.CORN_SEEDS);
         simpleItem(ModItems.RICE);
+        simpleItem(ModItems.RAW_RICE);
+        simpleItem(ModItems.COOKED_RICE);
         simpleItem(ModItems.RICE_SEEDS);
+        simpleItem(ModItems.SUSHI);
+        simpleItem(ModItems.METAL_BULLETS);
+        simpleItem(ModItems.CANNONBALL);
+
+        simpleItem(ModItems.PROJECTILE_TESTER);
+
 
         simpleItem(ModItems.WINE_BOTTLE);
+        simpleItem(ModItems.EMPTY_WINE_BOTTLE);
+
+        simpleItem(ModItems.EMPTY_MUG);
+        simpleItem(ModItems.BEER_MUG);
+        simpleItem(ModItems.RUM_MUG);
+        simpleItem(ModItems.GROG_MUG);
 
 
 
@@ -63,6 +77,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.PERIDOT_AXE);
         handheldItem(ModItems.PERIDOT_SHOVEL);
         handheldItem(ModItems.PERIDOT_HOE);
+
+        handheldItem(ModItems.NAVAL_CUTLASS);
+        handheldItem(ModItems.PIRATE_CUTLASS);
 
 
         trimmedArmorItem(ModItems.PERIDOT_HELMET);

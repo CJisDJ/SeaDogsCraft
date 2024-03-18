@@ -18,6 +18,7 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterials.PERIDOT, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1000, 1,
                             false,false, false)).build();
 
+
     public ModArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
         super(pMaterial, pType, pProperties);
     }

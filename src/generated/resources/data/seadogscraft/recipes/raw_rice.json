@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "seadogscraft:rice"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "seadogscraft:raw_rice"
+  }
+}

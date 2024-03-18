@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "seadogscraft:cooked_rice"
+    },
+    {
+      "tag": "seadogscraft:fish"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "seadogscraft:sushi"
+  }
+}

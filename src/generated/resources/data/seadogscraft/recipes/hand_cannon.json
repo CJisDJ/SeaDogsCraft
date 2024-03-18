@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "seadogscraft:empty_hand_cannon"
+    },
+    "O": {
+      "item": "minecraft:iron_block"
+    },
+    "S": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "pattern": [
+    "GS",
+    "OS"
+  ],
+  "result": {
+    "item": "seadogscraft:hand_cannon"
+  },
+  "show_notification": true
+}

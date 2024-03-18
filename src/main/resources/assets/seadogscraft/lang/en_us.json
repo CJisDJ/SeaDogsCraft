@@ -23,6 +23,18 @@
  "item.seadogscraft.corn": "Corn",
  "item.seadogscraft.wine_bottle": "Wine Bottle",
 
+
+ "item.seadogscraft.sniper_rifle": "Sniper Rifle",
+ "item.seadogscraft.shotgun": "Shotgun",
+
+ "item.seadogscraft.flintlock": "Flintlock",
+ "item.seadogscraft.hand_cannon": "Hand Cannon",
+
+
+
+
+
+
  "item.seadogscraft.rhino_spawn_egg": "Rhino Spawn Egg",
 
  "tooltip.seadogscraft.metal_detector.tooltip": "Searches for valuable ores underground.",

@@ -1,6 +1,9 @@
-// 1.20.1	2024-03-14T00:28:43.7509023	Recipes
+// 1.20.1	2024-03-17T16:59:41.7747226	Recipes
 b4067f67eec9e00f9643ce5757cd595ddc32de1f data/minecraft/advancements/recipes/misc/coal.json
 1bfbe09c17fbbc96f30ff3cdd9fd138cc0019562 data/minecraft/recipes/coal.json
+f2a195461e5b9aec1546516612a4f91d313655eb data/seadogscraft/advancements/recipes/food/cooked_rice_from_smelting_raw_rice.json
+338c6197f4a11b7e0721263c3390db70bd145bd5 data/seadogscraft/advancements/recipes/food/cooked_rice_from_smoking_raw_rice.json
+ff3a0040b02e82c21b46ef3566fb9aa0e7a50800 data/seadogscraft/advancements/recipes/misc/hand_cannon.json
 db90e1d8f4441620723365e38f52336ded0bafe7 data/seadogscraft/advancements/recipes/misc/mini_coal.json
 c0ab22d7e0cd689276b86943de5872a22b2d0601 data/seadogscraft/advancements/recipes/misc/peridot.json
 18e256a5aface748f4f97c3b956887970d2b22fb data/seadogscraft/advancements/recipes/misc/peridot_block.json
@@ -8,7 +11,12 @@ c0ab22d7e0cd689276b86943de5872a22b2d0601 data/seadogscraft/advancements/recipes/
 39d2f1db86676941aa0febb5e90d89303235270e data/seadogscraft/advancements/recipes/misc/peridot_chestplate.json
 8d1c6af1e08cd7f61bf3727452950c546591c012 data/seadogscraft/advancements/recipes/misc/peridot_helmet.json
 26e98bc90ec6808e68d569e2981e8aa45ab8e6f4 data/seadogscraft/advancements/recipes/misc/peridot_leggings.json
+f0a05448fdacc55f8e2994fdf57f50380ff2ff35 data/seadogscraft/advancements/recipes/misc/raw_rice.json
 58415180179b2be86836adc85fb7315a65e18280 data/seadogscraft/advancements/recipes/misc/sound_block.json
+366fbecacad2479fad51ecaed84c7dd582d97edd data/seadogscraft/advancements/recipes/misc/sushi.json
+0d58d43ccc31b9c09b0c31e46a62a93e35503584 data/seadogscraft/recipes/cooked_rice_from_smelting_raw_rice.json
+907e2caa84417941345122c1d338fbf70049dd73 data/seadogscraft/recipes/cooked_rice_from_smoking_raw_rice.json
+6098d494410d59ad64b08e38df8d000f05910ca6 data/seadogscraft/recipes/hand_cannon.json
 793b2363602a273beadd6737117593f573735ab9 data/seadogscraft/recipes/mini_coal.json
 1d5733de576475de71e66ac01ce726f79c990f3f data/seadogscraft/recipes/peridot.json
 dabe4d921e8ac309871a4fa8ab131f0334f3bda9 data/seadogscraft/recipes/peridot_block.json
@@ -16,4 +24,6 @@ dabe4d921e8ac309871a4fa8ab131f0334f3bda9 data/seadogscraft/recipes/peridot_block
 83d444842d8361064c32a456285a3a454bbb8544 data/seadogscraft/recipes/peridot_chestplate.json
 3e3cccacd7c103a9451d3eae357a2daa37d58f77 data/seadogscraft/recipes/peridot_helmet.json
 609363ebfc6958e9a6f23ef40277904caa681e27 data/seadogscraft/recipes/peridot_leggings.json
+b6baaf961de7de048dd517d5b7bc73cee882e343 data/seadogscraft/recipes/raw_rice.json
 a85c5a4b6bea13a562a380782066db17e0e8da1b data/seadogscraft/recipes/sound_block.json
+ca6337edd1d7cd7f0b341072da68e1324f811230 data/seadogscraft/recipes/sushi.json

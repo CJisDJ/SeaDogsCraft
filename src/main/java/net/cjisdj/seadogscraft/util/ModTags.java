@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks{
         public static final TagKey<Block> METAL_DETECTOR_VALUABLES = tag("metal_detector_valuables");
+
         public static final TagKey<Block> NEEDS_PERIDOT_TOOL = tag("needs_peridot_tool");
 
         private static TagKey<Block> tag(String name) {
@@ -21,7 +22,7 @@ public class ModTags {
 
     public static class Items{
 
-
+        public static final TagKey<Item> FISH = tag("fish");
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(SeaDogsCraft.MOD_ID, name));
         }
