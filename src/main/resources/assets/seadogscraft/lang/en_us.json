@@ -11,6 +11,16 @@
  "item.seadogscraft.metal_pipe": "Metal Pipe",
  "item.seadogscraft.cream_pipe": "Cream Pipe",
  "item.seadogscraft.mini_coal": "Mini Coal",
+ "item.seadogscraft.pirates_hat": "Captain's Hat",
+
+ "item.extramod.gunner_spawn_egg": "Gunner Spawn Egg",
+ "entity.extramod.gunner": "Gunner",
+ "item.extramod.captain_spawn_egg": "Captain Spawn Egg",
+ "item.extramod.swordman_spawn_egg": "Swordman Spawn Egg",
+ "entity.extramod.swordman": "Swordman",
+ "entity.extramod.trader": "Trader",
+ "item.extramod.trader_spawn_egg": "Trader Spawn Egg",
+ "entity.extramod.captain": "Captain",
 
  "item.seadogscraft.grape_seeds": "Grape Seeds",
  "item.seadogscraft.grape": "Grape",

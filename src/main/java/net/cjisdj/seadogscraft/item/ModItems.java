@@ -20,7 +20,7 @@ public class ModItems {
     public static final RegistryObject<Item> PERIDOT = ITEMS.register("peridot",
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
-            ()-> new MetalDetectorItem(new Item.Properties().durability(-1)));
+            ()-> new MetalDetectorItem(new Item.Properties().durability(-1).rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> GRAPE = ITEMS.register("grape",
             ()-> new Item(new Item.Properties().food(ModFoods.GRAPE)));
@@ -113,6 +113,9 @@ public class ModItems {
             ()-> new ArmorItem(ModArmorMaterials.PERIDOT, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> PERIDOT_BOOTS = ITEMS.register("peridot_boots",
             ()-> new ArmorItem(ModArmorMaterials.PERIDOT, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> PIRATES_HAT = ITEMS.register("pirates_hat",
+            ()-> new PiratesHatItem(ArmorMaterials.LEATHER, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> GRAPE_SEEDS = ITEMS.register("grape_seeds",
             ()-> new ItemNameBlockItem(ModBlocks.GRAPE_CROP.get(), new  Item.Properties()));
