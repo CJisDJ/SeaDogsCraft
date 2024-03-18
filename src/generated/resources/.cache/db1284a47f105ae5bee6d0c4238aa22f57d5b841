@@ -1,0 +1,5 @@
+// 1.20.1	2024-03-13T22:58:28.4131306	Tags for minecraft:block mod id seadogscraft
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
+ba104f19104203190f951d8e0e388be1d2ad58f0 data/minecraft/tags/blocks/mineable/pickaxe.json
+ba104f19104203190f951d8e0e388be1d2ad58f0 data/minecraft/tags/blocks/needs_iron_tool.json
+a0dc55c7146319fdcce38d908eeb2e950e2f0189 data/seadogscraft/tags/blocks/metal_detector_valuables.json
