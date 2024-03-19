@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "item/handheld",
   "loader": "forge:separate_transforms",
   "base": {
     "parent": "seadogscraft:item/flintlock_3d"
@@ -15,4 +15,5 @@
       "parent": "seadogscraft:item/flintlock_3d"
     }
   }
+
 }
