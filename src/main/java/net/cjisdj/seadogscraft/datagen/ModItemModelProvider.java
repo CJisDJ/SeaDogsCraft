@@ -82,9 +82,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.PERIDOT_SHOVEL);
         handheldItem(ModItems.PERIDOT_HOE);
 
-        handheldItem(ModItems.NAVAL_CUTLASS);
-        handheldItem(ModItems.PIRATE_CUTLASS);
-
 
         trimmedArmorItem(ModItems.PERIDOT_HELMET);
         trimmedArmorItem(ModItems.PERIDOT_CHESTPLATE);

@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base":
+  {
+    "parent": "seadogscraft:item/naval_cutlass_3d"
+  },
+  "perspectives":
+  {
+    "gui":
+    {
+      "parent": "seadogscraft:item/naval_cutlass_2d"
+    },
+    "ground":
+    {
+      "parent": "seadogscraft:item/naval_cutlass_2d"
+    },
+    "fixed":
+    {
+      "parent": "seadogscraft:item/naval_cutlass_3d"
+    }
+  }
+}
