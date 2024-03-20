@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.MINI_COAL);
 
+        simpleItem(ModItems.CURRY_POWDER);
         simpleItem(ModItems.GRAPE);
         simpleItem(ModItems.GRAPE_SEEDS);
         simpleItem(ModItems.CORN);
@@ -57,6 +58,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SUSHI);
         simpleItem(ModItems.METAL_BULLETS);
         simpleItem(ModItems.CANNONBALL);
+
+        simpleItem(ModItems.CHICKEN_CURRY_BOWL);
+
 
         simpleItem(ModItems.PROJECTILE_TESTER);
 

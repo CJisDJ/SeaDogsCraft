@@ -65,8 +65,14 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
 
+                        pOutput.accept(ModItems.METAL_BULLETS.get());
+                        pOutput.accept(ModItems.CANNONBALL.get());
+
+
                         pOutput.accept(ModItems.GRAPE_SEEDS.get());
                         pOutput.accept(ModItems.GRAPE.get());
+
+                        pOutput.accept(ModItems.CURRY_POWDER.get());
 
                         pOutput.accept(ModItems.CORN.get());
                         pOutput.accept(ModItems.CORN_SEEDS.get());

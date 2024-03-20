@@ -1,9 +1,11 @@
-// 1.20.1	2024-03-17T18:34:44.6157524	Item Models: seadogscraft
+// 1.20.1	2024-03-19T21:13:28.4746129	Item Models: seadogscraft
 d34082729ff3cfc86112bb069158e1ffad548955 assets/seadogscraft/models/item/beer_mug.json
 98d4c7d1fb52b7bedf40b19ba6127d1b16af49ab assets/seadogscraft/models/item/cannonball.json
+cffaffb9b13223bb5aee6e647b30c67baac9812d assets/seadogscraft/models/item/chicken_curry_bowl.json
 f68115786766f4218c21890d69fc66b097e1b958 assets/seadogscraft/models/item/cooked_rice.json
 eb63f3af7c16539e0979fa4ad6bbf3d2dd000b00 assets/seadogscraft/models/item/corn.json
 b99d580bd73dd3837291fec1532f1ae6e405543b assets/seadogscraft/models/item/corn_seeds.json
+bc24129345c5181aacc88023d46019c0859f53a1 assets/seadogscraft/models/item/curry_powder.json
 4812fb3082167117abf35a69301e1cbe28b302f5 assets/seadogscraft/models/item/empty_mug.json
 d4801c6eaff0f093f6dc09b1e21e098d73e186fc assets/seadogscraft/models/item/empty_wine_bottle.json
 dcd786fa2faf43328f1b8dcf99b13476a4681aca assets/seadogscraft/models/item/grape.json

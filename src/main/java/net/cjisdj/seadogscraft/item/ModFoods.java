@@ -32,10 +32,17 @@ public class ModFoods {
             .build();
 
 
-
     public static final FoodProperties SUSHI = new FoodProperties.Builder()
             .nutrition(10)
             .saturationMod(1.2f)
+            .build();
+
+
+    public static final FoodProperties CHICKEN_CURRY = new FoodProperties.Builder()
+            .nutrition(16)
+            .saturationMod(1.8f)
+            .effect(()-> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1000, 2),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.WATER_BREATHING, 260, 1),1f)
             .build();
 
 

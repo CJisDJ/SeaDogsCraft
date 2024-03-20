@@ -4,6 +4,7 @@ import net.cjisdj.seadogscraft.SeaDogsCraft;
 import net.cjisdj.seadogscraft.block.ModBlocks;
 import net.cjisdj.seadogscraft.entity.ModEntities;
 import net.cjisdj.seadogscraft.item.custom.*;
+import net.cjisdj.seadogscraft.item.custom.BowlFoodItem;
 import net.minecraft.world.item.*;
 import net.cjisdj.seadogscraft.item.custom.SniperItem;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -28,6 +29,20 @@ public class ModItems {
     public static final RegistryObject<Item> CORN = ITEMS.register("corn",
             ()-> new Item(new Item.Properties().food(ModFoods.CORN)));
 
+    public static final RegistryObject<Item> CURRY_POWDER = ITEMS.register("curry_powder",
+            ()-> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+
+    public static final RegistryObject<Item> CANNONBALL = ITEMS.register("cannonball",
+            ()-> new Item(new Item.Properties().rarity(Rarity.COMMON)));
+
+    public static final RegistryObject<Item> METAL_BULLETS = ITEMS.register("metal_bullets",
+            ()-> new Item(new Item.Properties()));
+
+
+    public static final RegistryObject<Item> CHICKEN_CURRY_BOWL = ITEMS.register("chicken_curry_bowl",
+            ()-> new BowlFoodItem(new Item.Properties().food(ModFoods.CHICKEN_CURRY)));
+
+
     public static final RegistryObject<Item> RICE = ITEMS.register("rice",
             ()-> new Item(new Item.Properties()));
 
@@ -42,14 +57,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal",
             ()-> new FuelItem(new Item.Properties(), 200));
-
-    public static final RegistryObject<Item> METAL_BULLETS = ITEMS.register("metal_bullets",
-            ()-> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> CANNONBALL = ITEMS.register("cannonball",
-            ()-> new Item(new Item.Properties()));
-
-
 
     public static final RegistryObject<Item> PERIDOT_SWORD = ITEMS.register("peridot_sword",
             ()-> new SwordItem(ModToolTiers.PERIDOT, 4,  -2.4F, new Item.Properties()));

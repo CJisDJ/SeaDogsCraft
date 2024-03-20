@@ -1,8 +1,9 @@
-// 1.20.1	2024-03-17T16:59:41.7747226	Recipes
+// 1.20.1	2024-03-19T21:19:19.8473743	Recipes
 b4067f67eec9e00f9643ce5757cd595ddc32de1f data/minecraft/advancements/recipes/misc/coal.json
 1bfbe09c17fbbc96f30ff3cdd9fd138cc0019562 data/minecraft/recipes/coal.json
 f2a195461e5b9aec1546516612a4f91d313655eb data/seadogscraft/advancements/recipes/food/cooked_rice_from_smelting_raw_rice.json
 338c6197f4a11b7e0721263c3390db70bd145bd5 data/seadogscraft/advancements/recipes/food/cooked_rice_from_smoking_raw_rice.json
+5665e8276f11ec92bf42fcd620468ad0f4afef64 data/seadogscraft/advancements/recipes/misc/chicken_curry_bowl.json
 ff3a0040b02e82c21b46ef3566fb9aa0e7a50800 data/seadogscraft/advancements/recipes/misc/hand_cannon.json
 db90e1d8f4441620723365e38f52336ded0bafe7 data/seadogscraft/advancements/recipes/misc/mini_coal.json
 c0ab22d7e0cd689276b86943de5872a22b2d0601 data/seadogscraft/advancements/recipes/misc/peridot.json
@@ -14,6 +15,7 @@ c0ab22d7e0cd689276b86943de5872a22b2d0601 data/seadogscraft/advancements/recipes/
 f0a05448fdacc55f8e2994fdf57f50380ff2ff35 data/seadogscraft/advancements/recipes/misc/raw_rice.json
 58415180179b2be86836adc85fb7315a65e18280 data/seadogscraft/advancements/recipes/misc/sound_block.json
 366fbecacad2479fad51ecaed84c7dd582d97edd data/seadogscraft/advancements/recipes/misc/sushi.json
+522fea81841681077aa28d7a18c58fde7e7456cf data/seadogscraft/recipes/chicken_curry_bowl.json
 0d58d43ccc31b9c09b0c31e46a62a93e35503584 data/seadogscraft/recipes/cooked_rice_from_smelting_raw_rice.json
 907e2caa84417941345122c1d338fbf70049dd73 data/seadogscraft/recipes/cooked_rice_from_smoking_raw_rice.json
 6098d494410d59ad64b08e38df8d000f05910ca6 data/seadogscraft/recipes/hand_cannon.json
