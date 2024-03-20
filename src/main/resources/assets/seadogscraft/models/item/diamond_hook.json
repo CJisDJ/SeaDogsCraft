@@ -1,0 +1,23 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base":
+  {
+    "parent": "seadogscraft:item/diamond_hook_3d"
+  },
+  "perspectives":
+  {
+    "gui":
+    {
+      "parent": "seadogscraft:item/diamond_hook_3d"
+    },
+    "ground":
+    {
+      "parent": "seadogscraft:item/diamond_hook_3d"
+    },
+    "fixed":
+    {
+      "parent": "seadogscraft:item/diamond_hook_3d"
+    }
+  }
+}
