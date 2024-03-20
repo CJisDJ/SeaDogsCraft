@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "seadogscraft:curry_powder"
+    },
+    "B": {
+      "item": "seadogscraft:cooked_rice"
+    },
+    "C": {
+      "item": "minecraft:cooked_chicken"
+    },
+    "D": {
+      "item": "minecraft:carrot"
+    },
+    "E": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    " A ",
+    "BCD",
+    " E "
+  ],
+  "result": {
+    "item": "seadogscraft:chicken_curry_bowl"
+  },
+  "show_notification": true
+}
