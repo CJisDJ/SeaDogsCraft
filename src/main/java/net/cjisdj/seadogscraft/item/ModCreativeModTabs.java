@@ -50,7 +50,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PROJECTILE_TESTER.get());
 
                         pOutput.accept(ModItems.NAVAL_CUTLASS.get());
-                        pOutput.accept(ModItems.PIRATE_CUTLASS.get());
+                        pOutput.accept(ModItems.DAMAGED_CUTLASS.get());
                         pOutput.accept(ModItems.PERIDOT_SWORD.get());
                         pOutput.accept(ModItems.PERIDOT_PICKAXE.get());
                         pOutput.accept(ModItems.PERIDOT_AXE.get());

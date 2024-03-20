@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-19T21:13:28.4746129	Item Models: seadogscraft
+// 1.20.1	2024-03-21T00:00:42.5935529	Item Models: seadogscraft
 d34082729ff3cfc86112bb069158e1ffad548955 assets/seadogscraft/models/item/beer_mug.json
 98d4c7d1fb52b7bedf40b19ba6127d1b16af49ab assets/seadogscraft/models/item/cannonball.json
 cffaffb9b13223bb5aee6e647b30c67baac9812d assets/seadogscraft/models/item/chicken_curry_bowl.json
@@ -14,7 +14,6 @@ dcd786fa2faf43328f1b8dcf99b13476a4681aca assets/seadogscraft/models/item/grape.j
 3774ebc258bb7591707e0dd749063424ba855b8d assets/seadogscraft/models/item/metal_bullets.json
 d5718b1847b32cf4eb52f8a167513665d32ba65c assets/seadogscraft/models/item/metal_detector.json
 d16998aac69cd25be841dc0dc9ba16aa72dc9dba assets/seadogscraft/models/item/mini_coal.json
-53d1aa81af19aefd33bbcf85a39fe5fdd6d31269 assets/seadogscraft/models/item/naval_cutlass.json
 6525cc8d990d20cf76ae9e8baceba7db3cc20c6a assets/seadogscraft/models/item/peridot.json
 67c9f8074ce95e23e9dbe2822ac41305ef9bcd4d assets/seadogscraft/models/item/peridot_axe.json
 35e84c43360e6b0f533de8ddce38508497937028 assets/seadogscraft/models/item/peridot_boots.json
@@ -65,7 +64,6 @@ ab0beb75b613f5708e22a10cb6902ae6111acdee assets/seadogscraft/models/item/peridot
 95dfd85cecaee0084817d92fac0dd1fd09c06e5c assets/seadogscraft/models/item/peridot_pickaxe.json
 d382c9a1c6ca68d49f27e53c6d55e605b04a88de assets/seadogscraft/models/item/peridot_shovel.json
 db80c612b2e17291209d12cc28eebddc0bb4806b assets/seadogscraft/models/item/peridot_sword.json
-a4091c900d68c34bd880ae81f8f0c467a5a23697 assets/seadogscraft/models/item/pirate_cutlass.json
 71c3d7104b9aad1cb095cba227aff75bb9e26992 assets/seadogscraft/models/item/raw_rice.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/seadogscraft/models/item/rhino_spawn_egg.json
 196e48ea6c0f49271c5d4b194f5659a8f61e2e26 assets/seadogscraft/models/item/rice.json

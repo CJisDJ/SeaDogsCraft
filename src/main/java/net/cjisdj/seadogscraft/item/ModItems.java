@@ -55,6 +55,18 @@ public class ModItems {
     public static final RegistryObject<Item> SUSHI = ITEMS.register("sushi",
             ()-> new Item(new Item.Properties().food(ModFoods.SUSHI)));
 
+    public static final RegistryObject<Item> STONE_HOOK = ITEMS.register("stone_hook",
+            () -> new SwordItem(Tiers.STONE, 1, -2.2F, new Item.Properties()));
+
+    public static final RegistryObject<Item> GOLDEN_HOOK = ITEMS.register("golden_hook",
+            () -> new SwordItem(Tiers.GOLD, 1, -1.8F, new Item.Properties()));
+
+    public static final RegistryObject<Item> IRON_HOOK = ITEMS.register("iron_hook",
+            () -> new SwordItem(Tiers.IRON, 1, -2.2F, new Item.Properties()));
+
+    public static final RegistryObject<Item> DIAMOND_HOOK = ITEMS.register("diamond_hook",
+            () -> new SwordItem(Tiers.DIAMOND, 1, -2.2F, new Item.Properties()));
+
     public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal",
             ()-> new FuelItem(new Item.Properties(), 200));
 
@@ -64,7 +76,7 @@ public class ModItems {
     public static final RegistryObject<Item> NAVAL_CUTLASS = ITEMS.register("naval_cutlass",
             ()-> new SwordItem(Tiers.DIAMOND, 3,  -2.4F, new Item.Properties()));
 
-    public static final RegistryObject<Item> PIRATE_CUTLASS = ITEMS.register("pirate_cutlass",
+    public static final RegistryObject<Item> DAMAGED_CUTLASS = ITEMS.register("damaged_cutlass",
             ()-> new BleedingSwordItem(Tiers.NETHERITE, 3,  -2.4F, new Item.Properties()));
 
 

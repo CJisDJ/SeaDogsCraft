@@ -52,7 +52,7 @@ public class CaptainEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.PIRATE_CUTLASS.get()));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.NAVAL_CUTLASS.get()));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ModItems.PIRATES_HAT.get()));
 	}
 
@@ -92,7 +92,7 @@ public class CaptainEntity extends Monster {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
 
 		if(Math.random() <= 0.1)
-		this.spawnAtLocation(new ItemStack(ModItems.PIRATE_CUTLASS.get()));
+		this.spawnAtLocation(new ItemStack(ModItems.NAVAL_CUTLASS.get()));
 	}
 
 	@Override
