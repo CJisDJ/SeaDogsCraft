@@ -61,7 +61,7 @@ public class PiratesHatItem extends ArmorItem implements GeoItem {
         controllers.add(new AnimationController<>(this, 20, state -> {
             // Apply our generic idle animation.
             // Whether it plays or not is decided down below.
-            state.setAnimation(DefaultAnimations.IDLE);
+           // state.setAnimation(DefaultAnimations.IDLE);
 
             // Let's gather some data from the state to use below
             // This is the entity that is currently wearing/holding the item

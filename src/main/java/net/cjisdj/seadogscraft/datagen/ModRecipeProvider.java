@@ -32,6 +32,22 @@ public class ModRecipeProvider extends RecipeProvider {
        //  oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.PERIDOT.get(), 0.25f, 100, "sapphire");
         oreSmoking(pWriter, RICE_SMELTABLES, RecipeCategory.FOOD, ModItems.COOKED_RICE.get(), 0.25f, 100, "rice");
         oreSmelting(pWriter, RICE_SMELTABLES, RecipeCategory.FOOD, ModItems.COOKED_RICE.get(), 0.25f, 200, "rice");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHICKEN_CURRY_BOWL.get())
+                .pattern(" A ")
+                .pattern("BCD")
+                .pattern(" E ")
+
+                .define('A', ModItems.CURRY_POWDER.get())
+                .define('B', ModItems.COOKED_RICE.get())
+                .define('C', Items.COOKED_CHICKEN)
+                .define('D', Items.CARROT)
+                .define('E', Items.BOWL)
+                .unlockedBy(getHasName(ModItems.CURRY_POWDER.get()), has(ModItems.CURRY_POWDER.get()))
+                .save(pWriter);
+
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HAND_CANNON.get())
                 .pattern("GS")
                 .pattern("OS")

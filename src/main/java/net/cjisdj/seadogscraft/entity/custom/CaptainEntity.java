@@ -2,6 +2,7 @@
 package net.cjisdj.seadogscraft.entity.custom;
 
 import net.cjisdj.seadogscraft.item.ModItems;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
@@ -14,10 +15,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -43,6 +40,9 @@ import net.cjisdj.seadogscraft.entity.init.SeaDogsCraftModEntities;
 public class CaptainEntity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.PURPLE, ServerBossEvent.BossBarOverlay.PROGRESS);
 
+	boolean canSpawn = false;
+	int tickCounter = 0;
+
 	public CaptainEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(SeaDogsCraftModEntities.CAPTAIN.get(), world);
 	}
@@ -52,7 +52,7 @@ public class CaptainEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_AXE));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.PIRATE_CUTLASS.get()));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ModItems.PIRATES_HAT.get()));
 	}
 
@@ -74,6 +74,8 @@ public class CaptainEntity extends Monster {
 		});
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(5, new FloatGoal(this));
+		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(1,new WaterAvoidingRandomStrollGoal(this, 1.10));
 	}
 
 	@Override
@@ -88,7 +90,9 @@ public class CaptainEntity extends Monster {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Items.DIAMOND_CHESTPLATE));
+
+		if(Math.random() <= 0.1)
+		this.spawnAtLocation(new ItemStack(ModItems.PIRATE_CUTLASS.get()));
 	}
 
 	@Override
@@ -112,6 +116,16 @@ public class CaptainEntity extends Monster {
 	}
 
 	@Override
+	public void tick() {
+		super.tick();
+		tickCounter++;
+		if (tickCounter == 60) {
+			canSpawn = true;
+		}
+	}
+
+
+	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
 		double x = this.getX();
 		double y = this.getY();
@@ -121,7 +135,11 @@ public class CaptainEntity extends Monster {
 		Entity sourceentity = damagesource.getEntity();
 		Entity immediatesourceentity = damagesource.getDirectEntity();
 
-		CaptainEntityIsHurtProcedure.execute(world, x, y, z);
+		if(canSpawn){
+			CaptainEntityIsHurtProcedure.execute(world, x, y, z);
+			tickCounter = 0;
+			canSpawn = false;
+		}
 		return super.hurt(damagesource, amount);
 	}
 
@@ -155,11 +173,11 @@ public class CaptainEntity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.5);
-		builder = builder.add(Attributes.MAX_HEALTH, 100);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MAX_HEALTH, 150);
 		builder = builder.add(Attributes.ARMOR, 20);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
 		return builder;
 	}
 }
