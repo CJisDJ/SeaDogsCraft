@@ -9,11 +9,9 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BowItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.NotNull;
 
 
 public class FlintlockItem extends BowItem {
@@ -42,7 +40,7 @@ public class FlintlockItem extends BowItem {
 
 
         if(itemstack.getDamageValue() == 5){
-            return InteractionResultHolder.sidedSuccess(new ItemStack(ModItems.WINE_BOTTLE.get()), pLevel.isClientSide());
+            return InteractionResultHolder.sidedSuccess(new ItemStack(ModItems.EMPTY_FLINTLOCK.get()), pLevel.isClientSide());
         }
         else{
             return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
