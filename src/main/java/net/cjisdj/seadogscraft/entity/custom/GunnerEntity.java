@@ -2,6 +2,7 @@
 package net.cjisdj.seadogscraft.entity.custom;
 
 import net.cjisdj.seadogscraft.entity.init.SeaDogsCraftModEntities;
+import net.cjisdj.seadogscraft.item.ModItems;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
@@ -80,7 +81,7 @@ public class GunnerEntity extends Monster implements RangedAttackMob {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Items.IRON_INGOT));
+		this.spawnAtLocation(new ItemStack(ModItems.GOLDEN_COINS.get()));
 	}
 
 	@Override

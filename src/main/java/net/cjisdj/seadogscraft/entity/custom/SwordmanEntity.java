@@ -2,6 +2,7 @@
 package net.cjisdj.seadogscraft.entity.custom;
 
 import net.cjisdj.seadogscraft.entity.init.SeaDogsCraftModEntities;
+import net.cjisdj.seadogscraft.item.ModItems;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
@@ -42,7 +43,7 @@ public class SwordmanEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_SWORD));
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.NAVAL_CUTLASS.get()));
 	}
 
 	@Override
@@ -79,7 +80,7 @@ public class SwordmanEntity extends Monster {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Items.DIAMOND));
+		this.spawnAtLocation(new ItemStack(ModItems.GOLDEN_COINS.get()));
 	}
 
 	@Override
@@ -110,7 +111,7 @@ public class SwordmanEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);

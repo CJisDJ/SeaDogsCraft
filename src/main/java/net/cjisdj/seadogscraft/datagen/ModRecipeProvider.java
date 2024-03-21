@@ -52,10 +52,40 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("GS")
                 .pattern("OS")
                 .define('G', ModItems.EMPTY_HAND_CANNON.get())
+                .define('O', ModItems.CANNONBALL.get())
                 .define('S', Items.GUNPOWDER)
-                .define('O', Items.IRON_BLOCK)
                 .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLINTLOCK.get())
+                .pattern("GS")
+                .pattern("O ")
+                .define('G', ModItems.EMPTY_FLINTLOCK.get())
+                .define('S', ModItems.METAL_BULLETS.get())
+                .define('O', Items.GUNPOWDER)
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SNIPER_RIFLE.get())
+                .pattern("GS")
+                .pattern("OS")
+                .define('G', ModItems.EMPTY_SNIPER_RIFLE.get())
+                .define('O', ModItems.METAL_BULLETS.get())
+                .define('S', Items.GUNPOWDER)
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUNDERBUSS.get())
+                .pattern("GS")
+                .pattern("OS")
+                .define('G', ModItems.EMPTY_BLUNDERBUSS.get())
+                .define('S', ModItems.METAL_BULLETS.get())
+                .define('O', Items.GUNPOWDER)
+                .unlockedBy(getHasName(ModItems.PERIDOT.get()), has(ModItems.PERIDOT.get()))
+                .save(pWriter);
+
+
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_RICE.get(),2)
                 .requires(ModItems.RICE.get())

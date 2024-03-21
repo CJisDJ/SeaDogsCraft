@@ -73,6 +73,14 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.GRAPE.get());
 
                         pOutput.accept(ModItems.CURRY_POWDER.get());
+                        pOutput.accept(ModItems.CHICKEN_CURRY_BOWL.get());
+
+
+                        pOutput.accept(ModItems.RAW_RICE.get());
+                        pOutput.accept(ModItems.COOKED_RICE.get());
+
+                        pOutput.accept(ModItems.GOLDEN_COINS.get());
+
 
                         pOutput.accept(ModItems.CORN.get());
                         pOutput.accept(ModItems.CORN_SEEDS.get());
