@@ -3,9 +3,7 @@
  "block.seadogscraft.peridot_block": "Block of Peridot",
  "block.seadogscraft.peridot_ore": "Peridot Ore",
  "block.seadogscraft.deepslate_peridot_ore": "Deepslate Peridot Ore",
- "block.seadogscraft.baobab_log": "Baobab Log",
  "block.seadogscraft.baobab_planks": "Baobab Planks",
- "block.seadogscraft.baobab_leaves": "Baobab Leaves",
  "block.seadogscraft.sound_block": "Sound Block",
  "item.seadogscraft.metal_detector": "Metal Detector",
  "item.seadogscraft.metal_pipe": "Metal Pipe",
@@ -20,14 +18,27 @@
  "item.seadogscraft.damaged_cutlass": "Damaged Cutlass",
 
 
- "item.extramod.gunner_spawn_egg": "Gunner Spawn Egg",
- "entity.extramod.gunner": "Gunner",
- "item.extramod.captain_spawn_egg": "Captain Spawn Egg",
- "item.extramod.swordman_spawn_egg": "Swordman Spawn Egg",
- "entity.extramod.swordman": "Swordman",
- "entity.extramod.trader": "Trader",
- "item.extramod.trader_spawn_egg": "Trader Spawn Egg",
- "entity.extramod.captain": "Captain",
+ "item.seadogscraft.curry_powder": "Curry Powder",
+ "item.seadogscraft.raw_rice": "Raw Rice",
+ "item.seadogscraft.cooked_rice": "Cooked Rice",
+
+ "item.seadogscraft.cannonball": "Cannonball",
+
+ "item.seadogscraft.metal_bullets": "Metal Bullets",
+
+
+
+ "item.seadogscraft.chicken_curry_bowl": "Chicken Curry Bowl",
+
+
+ "item.seadogscraft.gunner_spawn_egg": "Gunner Spawn Egg",
+ "entity.seadogscraft.gunner": "Gunner",
+ "item.seadogscraft.captain_spawn_egg": "Captain Spawn Egg",
+ "item.seadogscraft.swordman_spawn_egg": "Swordman Spawn Egg",
+ "entity.seadogscraft.swordman": "Swordman",
+ "entity.seadogscraft.trader": "Trader",
+ "item.seadogscraft.trader_spawn_egg": "Trader Spawn Egg",
+ "entity.seadogscraft.captain": "Captain",
 
  "item.seadogscraft.grape_seeds": "Grape Seeds",
  "item.seadogscraft.grape": "Grape",
