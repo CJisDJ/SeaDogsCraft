@@ -1,14 +1,11 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *    cjisdj note: This file will be REGENERATED on each build.
  */
 package net.cjisdj.seadogscraft.entity.init;
 
 import net.cjisdj.seadogscraft.SeaDogsCraft;
-import net.cjisdj.seadogscraft.entity.custom.CaptainEntity;
-import net.cjisdj.seadogscraft.entity.custom.GunnerEntity;
-import net.cjisdj.seadogscraft.entity.custom.SwordmanEntity;
-import net.cjisdj.seadogscraft.entity.custom.TraderEntity;
+import net.cjisdj.seadogscraft.entity.custom.*;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +17,9 @@ import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
+
+import net.cjisdj.seadogscraft.entity.custom.CaptraderTraderEntity;
+
 
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -42,9 +42,16 @@ public class SeaDogsCraftModEntities {
 
 					.sized(0.6f, 1.8f));
 
+	public static final RegistryObject<EntityType<CaptraderTraderEntity>> CAPTAIN_TRADER = register("captain_trader",
+			EntityType.Builder.<CaptraderTraderEntity>of(CaptraderTraderEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CaptraderTraderEntity::new)
+
+					.sized(0.6f, 1.8f));
+
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
 	}
+
+
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -53,6 +60,7 @@ public class SeaDogsCraftModEntities {
 			SwordmanEntity.init();
 			CaptainEntity.init();
 			TraderEntity.init();
+			CaptraderTraderEntity.init();
 		});
 	}
 
@@ -62,5 +70,6 @@ public class SeaDogsCraftModEntities {
 		event.put(SWORDMAN.get(), SwordmanEntity.createAttributes().build());
 		event.put(CAPTAIN.get(), CaptainEntity.createAttributes().build());
 		event.put(TRADER.get(), TraderEntity.createAttributes().build());
+		event.put(CAPTAIN_TRADER.get(), CaptraderTraderEntity.createAttributes().build());
 	}
 }

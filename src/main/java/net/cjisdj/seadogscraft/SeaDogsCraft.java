@@ -7,6 +7,7 @@ import net.cjisdj.seadogscraft.entity.ModEntities;
 import net.cjisdj.seadogscraft.entity.client.*;
 import net.cjisdj.seadogscraft.entity.init.SeaDogsCraftModEntities;
 import net.cjisdj.seadogscraft.entity.init.SeaDogsCraftModItems;
+import net.cjisdj.seadogscraft.entity.init.TradingExampleModMenus;
 import net.cjisdj.seadogscraft.item.ModCreativeModTabs;
 import net.cjisdj.seadogscraft.item.ModItems;
 import net.cjisdj.seadogscraft.loot.ModLootModifiers;
@@ -22,6 +23,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -35,6 +37,11 @@ import net.minecraftforge.network.simple.SimpleChannel;
 import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
 
+import java.util.AbstractMap;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -49,6 +56,7 @@ public class SeaDogsCraft
     public SeaDogsCraft()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModTabs.register(modEventBus);
 
@@ -69,6 +77,9 @@ public class SeaDogsCraft
         SeaDogsCraftModEntities.REGISTRY.register(modEventBus);
         SeaDogsCraftModItems.REGISTRY.register(modEventBus);
 
+
+
+        TradingExampleModMenus.REGISTRY.register(bus);
 
         GeckoLib.initialize();
 
@@ -98,6 +109,10 @@ public class SeaDogsCraft
         messageID++;
     }
 
+    private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
+    public static void queueServerWork(int tick, Runnable action) {
+        workQueue.add(new AbstractMap.SimpleEntry(action, tick));
+    }
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
     }
@@ -122,4 +137,19 @@ public class SeaDogsCraft
             EntityRenderers.register(ModEntities.FLINTLOCK_PROJECTILE.get(), FlintlockProjectileRenderer::new);
         }
     }
+
+    @SubscribeEvent
+    public void tick(TickEvent.ServerTickEvent event) {
+        if (event.phase == TickEvent.Phase.END) {
+            List<AbstractMap.SimpleEntry<Runnable, Integer>> actions = new ArrayList<>();
+            workQueue.forEach(work -> {
+                work.setValue(work.getValue() - 1);
+                if (work.getValue() == 0)
+                    actions.add(work);
+            });
+            actions.forEach(e -> e.getKey().run());
+            workQueue.removeAll(actions);
+        }
+    }
+
 }

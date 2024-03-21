@@ -38,6 +38,14 @@
  "item.seadogscraft.chicken_curry_bowl": "Chicken Curry Bowl",
 
 
+ "item.seadogscraft.captrader_trader": "Captain Trader Spawn Egg",
+ "item.seadogscraft.captrader_trader_spawn_egg": "Captain Trader Spawn Egg",
+ "gui.seadogscraft.captrader_trading.button_previous": "Previous",
+ "entity.seadogscraft.captrader_trader": "Captain Trader",
+ "gui.seadogscraft.captrader_trading.button_next": "Next",
+ "gui.seadogscraft.captrader_trading.label_trades": "Trades",
+ "gui.seadogscraft.captrader_trading.label_emerald": "Golden Coins",
+
  "item.seadogscraft.gunner_spawn_egg": "Gunner Spawn Egg",
  "entity.seadogscraft.gunner": "Gunner",
  "item.seadogscraft.captain_spawn_egg": "Captain Spawn Egg",
@@ -63,6 +71,12 @@
 
  "item.seadogscraft.flintlock": "Flintlock",
  "item.seadogscraft.hand_cannon": "Hand Cannon",
+
+ "item.seadogscraft.empty_sniper_rifle": "Empty Sniper Rifle",
+ "item.seadogscraft.empty_shotgun": "Empty Shotgun",
+
+ "item.seadogscraft.empty_flintlock": "Empty Flintlock",
+ "item.seadogscraft.empty_hand_cannon": "Empty Hand Cannon",
 
 
 

@@ -64,7 +64,7 @@ public class SniperItem extends Item{
         }
 
         if(itemstack.getDamageValue() == 5){
-            return InteractionResultHolder.sidedSuccess(new ItemStack(ModItems.WINE_BOTTLE.get()), pLevel.isClientSide());
+            return InteractionResultHolder.sidedSuccess(new ItemStack(ModItems.EMPTY_SNIPER_RIFLE.get()), pLevel.isClientSide());
         }
         else{
             return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());

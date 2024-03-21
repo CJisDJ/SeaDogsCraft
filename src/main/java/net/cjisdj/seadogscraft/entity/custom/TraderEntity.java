@@ -42,6 +42,10 @@ public class TraderEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
+
+		setPersistenceRequired();
+
+
 	}
 
 	@Override

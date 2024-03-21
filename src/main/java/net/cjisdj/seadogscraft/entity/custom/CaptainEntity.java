@@ -52,6 +52,10 @@ public class CaptainEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
+
+		setPersistenceRequired();
+
+
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.NAVAL_CUTLASS.get()));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(ModItems.PIRATES_HAT.get()));
 	}

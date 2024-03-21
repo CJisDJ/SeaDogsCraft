@@ -44,6 +44,10 @@ public class GunnerEntity extends Monster implements RangedAttackMob {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
+
+		setPersistenceRequired();
+
+
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.BOW));
 	}
 

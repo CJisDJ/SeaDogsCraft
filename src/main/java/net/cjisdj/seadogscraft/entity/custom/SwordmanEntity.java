@@ -43,6 +43,10 @@ public class SwordmanEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
+
+		setPersistenceRequired();
+
+
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.NAVAL_CUTLASS.get()));
 	}
 

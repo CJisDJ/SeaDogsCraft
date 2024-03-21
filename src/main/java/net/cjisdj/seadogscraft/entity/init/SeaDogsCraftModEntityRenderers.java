@@ -4,15 +4,14 @@
  */
 package net.cjisdj.seadogscraft.entity.init;
 
+import net.cjisdj.seadogscraft.entity.client.gui.CaptraderTradingScreen;
+import net.cjisdj.seadogscraft.entity.client.renderer.*;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.cjisdj.seadogscraft.entity.client.renderer.TraderRenderer;
-import net.cjisdj.seadogscraft.entity.client.renderer.SwordmanRenderer;
-import net.cjisdj.seadogscraft.entity.client.renderer.GunnerRenderer;
-import net.cjisdj.seadogscraft.entity.client.renderer.CaptainRenderer;
+import org.checkerframework.checker.units.qual.C;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SeaDogsCraftModEntityRenderers {
@@ -22,5 +21,6 @@ public class SeaDogsCraftModEntityRenderers {
 		event.registerEntityRenderer(SeaDogsCraftModEntities.SWORDMAN.get(), SwordmanRenderer::new);
 		event.registerEntityRenderer(SeaDogsCraftModEntities.CAPTAIN.get(), CaptainRenderer::new);
 		event.registerEntityRenderer(SeaDogsCraftModEntities.TRADER.get(), TraderRenderer::new);
+		event.registerEntityRenderer(SeaDogsCraftModEntities.CAPTAIN_TRADER.get(), CaptraderTraderRenderer::new);
 	}
 }

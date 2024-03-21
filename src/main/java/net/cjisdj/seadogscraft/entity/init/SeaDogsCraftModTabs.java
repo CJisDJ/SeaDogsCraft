@@ -27,6 +27,7 @@ public class SeaDogsCraftModTabs {
 			tabData.accept(SeaDogsCraftModItems.SWORDMAN_SPAWN_EGG.get());
 			tabData.accept(SeaDogsCraftModItems.CAPTAIN_SPAWN_EGG.get());
 			tabData.accept(SeaDogsCraftModItems.TRADER_SPAWN_EGG.get());
+			tabData.accept(SeaDogsCraftModItems.CAPTAIN_TRADER_SPAWN_EGG.get());
 		}
 	}
 }
