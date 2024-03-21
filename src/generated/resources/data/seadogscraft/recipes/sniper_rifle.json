@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "G": {
-      "item": "seadogscraft:empty_hand_cannon"
+      "item": "seadogscraft:empty_sniper_rifle"
     },
     "O": {
-      "item": "seadogscraft:cannonball"
+      "item": "seadogscraft:metal_bullets"
     },
     "S": {
       "item": "minecraft:gunpowder"
@@ -17,7 +17,7 @@
     "OS"
   ],
   "result": {
-    "item": "seadogscraft:hand_cannon"
+    "item": "seadogscraft:sniper_rifle"
   },
   "show_notification": true
 }

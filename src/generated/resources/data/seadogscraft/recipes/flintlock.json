@@ -3,21 +3,21 @@
   "category": "misc",
   "key": {
     "G": {
-      "item": "seadogscraft:empty_hand_cannon"
+      "item": "seadogscraft:empty_flintlock"
     },
     "O": {
-      "item": "seadogscraft:cannonball"
+      "item": "minecraft:gunpowder"
     },
     "S": {
-      "item": "minecraft:gunpowder"
+      "item": "seadogscraft:metal_bullets"
     }
   },
   "pattern": [
     "GS",
-    "OS"
+    "O "
   ],
   "result": {
-    "item": "seadogscraft:hand_cannon"
+    "item": "seadogscraft:flintlock"
   },
   "show_notification": true
 }

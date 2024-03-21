@@ -58,7 +58,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SUSHI);
         simpleItem(ModItems.METAL_BULLETS);
         simpleItem(ModItems.CANNONBALL);
-
+        simpleItem(ModItems.GOLDEN_COINS);
         simpleItem(ModItems.CHICKEN_CURRY_BOWL);
 
 

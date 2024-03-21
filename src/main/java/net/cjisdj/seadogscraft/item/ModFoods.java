@@ -6,12 +6,40 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods {
     public static final FoodProperties WINE_BOTTLE = new FoodProperties.Builder()
-            .nutrition(6)
-            .fast()
+            .nutrition(5)
             .saturationMod(0.5f)
-            .effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 500, 2),1f)
-            .effect(()-> new MobEffectInstance(MobEffects.CONFUSION, 250, 3),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 500, 0),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.CONFUSION, 250, 4),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1),1f)
             .build();
+
+    public static final FoodProperties BEER = new FoodProperties.Builder()
+            .nutrition(5)
+            .saturationMod(0.5f)
+            .effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 500, 0),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.CONFUSION, 250, 2),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1),1f)
+            .build();
+
+    public static final FoodProperties RUM = new FoodProperties.Builder()
+            .nutrition(5)
+            .saturationMod(0.5f)
+            .effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 500, 0),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.CONFUSION, 250, 4),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1),1f)
+            .build();
+
+    public static final FoodProperties GROG = new FoodProperties.Builder()
+            .nutrition(5)
+            .saturationMod(0.5f)
+            .effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 500, 0),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.CONFUSION, 200, 1),1f)
+            .effect(()-> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 1),1f)
+            .build();
+
+
+
+
 
     public static final FoodProperties GRAPE = new FoodProperties.Builder()
             .nutrition(2)

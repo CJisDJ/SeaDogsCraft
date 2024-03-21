@@ -26,6 +26,10 @@ public class ModItems {
     public static final RegistryObject<Item> GRAPE = ITEMS.register("grape",
             ()-> new Item(new Item.Properties().food(ModFoods.GRAPE)));
 
+
+    public static final RegistryObject<Item> GOLDEN_COINS = ITEMS.register("golden_coins",
+            ()-> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+
     public static final RegistryObject<Item> CORN = ITEMS.register("corn",
             ()-> new Item(new Item.Properties().food(ModFoods.CORN)));
 
@@ -33,7 +37,7 @@ public class ModItems {
             ()-> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<Item> CANNONBALL = ITEMS.register("cannonball",
-            ()-> new Item(new Item.Properties().rarity(Rarity.COMMON)));
+            ()-> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> METAL_BULLETS = ITEMS.register("metal_bullets",
             ()-> new Item(new Item.Properties()));
@@ -85,7 +89,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> EMPTY_FLINTLOCK = ITEMS.register("empty_flintlock",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
 
     public static final RegistryObject<Item> FLINTLOCK = ITEMS.register("flintlock",
@@ -93,12 +97,12 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> EMPTY_SNIPER_RIFLE = ITEMS.register("empty_sniper_rifle",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> SNIPER_RIFLE = ITEMS.register("sniper_rifle",
             () -> new SniperItem(new Item.Properties().durability(6)));
 
-    public static final RegistryObject<Item> EMPTY_BLUNDERBUSS = ITEMS.register("empty_blunderbuss",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EMPTY_BLUNDERBUSS = ITEMS.register("empty_shotgun",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> BLUNDERBUSS = ITEMS.register("shotgun",
             () -> new BlunderbussItem(new Item.Properties().durability(6)));
@@ -107,7 +111,7 @@ public class ModItems {
             () -> new HandCannonItem(new Item.Properties().durability(3)));
 
     public static final RegistryObject<Item> EMPTY_HAND_CANNON = ITEMS.register("empty_hand_cannon",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
    // public static final RegistryObject<Item> ALEXANDRITE_BOW = ITEMS.register("alexandrite_bow",
    //         () -> new BowItem(new Item.Properties().durability(500)));
@@ -160,13 +164,13 @@ public class ModItems {
             ()-> new DrinkWineBottleItem(new Item.Properties().food(ModFoods.WINE_BOTTLE)));
 
     public static final RegistryObject<Item> BEER_MUG = ITEMS.register("beer_mug",
-            ()-> new DrinkMugItem(new Item.Properties().food(ModFoods.WINE_BOTTLE)));
+            ()-> new DrinkMugItem(new Item.Properties().food(ModFoods.BEER)));
 
     public static final RegistryObject<Item> RUM_MUG = ITEMS.register("rum_mug",
-            ()-> new DrinkMugItem(new Item.Properties().food(ModFoods.WINE_BOTTLE)));
+            ()-> new DrinkMugItem(new Item.Properties().food(ModFoods.RUM)));
 
     public static final RegistryObject<Item> GROG_MUG = ITEMS.register("grog_mug",
-            ()-> new DrinkMugItem(new Item.Properties().food(ModFoods.WINE_BOTTLE)));
+            ()-> new DrinkMugItem(new Item.Properties().food(ModFoods.GROG)));
 
 
 

@@ -92,7 +92,7 @@ public class CaptainEntity extends Monster {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
 
 		if(Math.random() <= 0.1)
-		this.spawnAtLocation(new ItemStack(ModItems.NAVAL_CUTLASS.get()));
+		this.spawnAtLocation(new ItemStack(ModItems.DAMAGED_CUTLASS.get()));
 	}
 
 	@Override

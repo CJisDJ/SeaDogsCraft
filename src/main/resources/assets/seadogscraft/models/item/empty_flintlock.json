@@ -1,0 +1,19 @@
+{
+  "parent": "item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "seadogscraft:item/flintlock_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "seadogscraft:item/flintlock_3d"
+    },
+    "ground": {
+      "parent": "seadogscraft:item/flintlock_3d"
+    },
+    "fixed": {
+      "parent": "seadogscraft:item/flintlock_3d"
+    }
+  }
+
+}

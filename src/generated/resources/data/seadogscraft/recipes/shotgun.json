@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "G": {
-      "item": "seadogscraft:empty_hand_cannon"
+      "item": "seadogscraft:empty_shotgun"
     },
     "O": {
-      "item": "seadogscraft:cannonball"
+      "item": "minecraft:gunpowder"
     },
     "S": {
-      "item": "minecraft:gunpowder"
+      "item": "seadogscraft:metal_bullets"
     }
   },
   "pattern": [
@@ -17,7 +17,7 @@
     "OS"
   ],
   "result": {
-    "item": "seadogscraft:hand_cannon"
+    "item": "seadogscraft:shotgun"
   },
   "show_notification": true
 }

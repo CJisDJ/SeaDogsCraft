@@ -25,8 +25,15 @@
  "item.seadogscraft.cannonball": "Cannonball",
 
  "item.seadogscraft.metal_bullets": "Metal Bullets",
+ "item.seadogscraft.golden_coins": "Golden Coins",
 
+ "item.seadogscraft.empty_mug": "Empty Mug",
+ "item.seadogscraft.rum_mug": "Rum Mug",
+ "item.seadogscraft.beer_mug": "Beer Mug",
+ "item.seadogscraft.grog_mug": "Grog Mug",
 
+ "item.seadogscraft.empty_wine_bottle": "Empty Wine Bottle",
+ "item.seadogscraft.wine_bottle": "Wine Bottle",
 
  "item.seadogscraft.chicken_curry_bowl": "Chicken Curry Bowl",
 
@@ -49,7 +56,6 @@
 
  "item.seadogscraft.corn_seeds": "Corn Seeds",
  "item.seadogscraft.corn": "Corn",
- "item.seadogscraft.wine_bottle": "Wine Bottle",
 
 
  "item.seadogscraft.sniper_rifle": "Sniper Rifle",
