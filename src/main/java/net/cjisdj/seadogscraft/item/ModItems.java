@@ -60,16 +60,16 @@ public class ModItems {
             ()-> new Item(new Item.Properties().food(ModFoods.SUSHI)));
 
     public static final RegistryObject<Item> STONE_HOOK = ITEMS.register("stone_hook",
-            () -> new SwordItem(Tiers.STONE, 1, -2.2F, new Item.Properties()));
+            () -> new BleedingSwordItem(Tiers.STONE, 1, -2.2F, new Item.Properties()));
 
     public static final RegistryObject<Item> GOLDEN_HOOK = ITEMS.register("golden_hook",
-            () -> new SwordItem(Tiers.GOLD, 1, -1.8F, new Item.Properties()));
+            () -> new BleedingSwordItem(Tiers.GOLD, 1, -1.8F, new Item.Properties()));
 
     public static final RegistryObject<Item> IRON_HOOK = ITEMS.register("iron_hook",
-            () -> new SwordItem(Tiers.IRON, 1, -2.2F, new Item.Properties()));
+            () -> new BleedingSwordItem(Tiers.IRON, 1, -2.2F, new Item.Properties()));
 
     public static final RegistryObject<Item> DIAMOND_HOOK = ITEMS.register("diamond_hook",
-            () -> new SwordItem(Tiers.DIAMOND, 1, -2.2F, new Item.Properties()));
+            () -> new BleedingSwordItem(Tiers.DIAMOND, 1, -2.2F, new Item.Properties()));
 
     public static final RegistryObject<Item> MINI_COAL = ITEMS.register("mini_coal",
             ()-> new FuelItem(new Item.Properties(), 200));
